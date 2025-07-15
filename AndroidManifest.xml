@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <queries>
+        <package android:name="com.google.android.gm" /> <!-- Gmail -->
+        <package android:name="com.whatsapp" /> <!-- WhatsApp -->
+        <package android:name="com.facebook.katana" /> <!-- Facebook -->
+        <package android:name="com.instagram.android" /> <!-- Instagram -->
+        <package android:name="com.twitter.android" /> <!-- Twitter -->
+        <package android:name="com.microsoft.office.outlook" /> <!-- Microsoft Outlook -->
+        <package android:name="com.spotify.music" /> <!-- Spotify -->
+        <package android:name="com.google.android.youtube" /> <!-- YouTube -->
+        <package android:name="com.snapchat.android" /> <!-- Snapchat -->
+        <package android:name="com.linkedin.android" /> <!-- LinkedIn -->
+        <package android:name="com.amazon.mShop.android.shopping" /> <!-- Amazon Shopping -->
+        <package android:name="com.netflix.mediaclient" /> <!-- Netflix -->
+        <package android:name="com.microsoft.teams" /> <!-- Microsoft Teams -->
+        <package android:name="com.google.android.apps.docs" /> <!-- Google Drive -->
+        <package android:name="com.google.android.calendar" /> <!-- Google Calendar -->
+        <package android:name="com.dropbox.android" /> <!-- Dropbox -->
+        <package android:name="com.google.android.apps.maps" /> <!-- Google Maps -->
+        <package android:name="com.google.android.apps.photos" /> <!-- Google Photos -->
+        <!-- Add more packages as needed -->
+    </queries>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Aially"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.permission.INTERNET"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+</manifest>
